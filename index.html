@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- ===================
+    nsv start
+========================= -->
+    <nav class="container mx-auto px-4">
+        <div class="flex justify-between items-center flex-wrap mt-5">
+            <div class="w-full md:w-auto mb-4 md:mb-0">
+                <img src="image/logo.png" alt="logo" class="mx-auto md:mx-0">
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden" id="menu-toggle">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                </svg>
+            </button>
+            <!-- Navigation Links -->
+            <div class="hidden md:block w-full md:w-auto" id="mobile-menu">
+                <ul class="uppercase flex flex-col md:flex-row gap-4 md:gap-7 text-center">
+                    <li><a href="#" class="block py-2 md:py-0">Home</a></li>
+                    <li><a href="#" class="block py-2 md:py-0">Portfolio</a></li>
+                    <li><a href="#" class="block py-2 md:py-0">Pages</a></li>
+                    <li><a href="#" class="block py-2 md:py-0">Shortcodes</a></li>
+                    <li><a href="#" class="block py-2 md:py-0">Blog</a></li>
+                    <li><a href="#" class="block py-2 md:py-0">About Me</a></li>
+                    <li><a href="#" class="block py-2 md:py-0">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================
+    bg start
+========================= -->
+
+    <section class="bg-[url(image/bg.png)] py-32 md:py-64 mt-4">
+        <div class="container mx-auto px-4">
+            <h1
+                class="text-5xl font-bold relative  after:absolute after:left-0 after:top-full after:bg-yellow-400 after:w-7 after:mt-3 after:h-1 text-center sm:text-left">
+                I am Light</h1>
+            <p class="italic lg:w-[547px] pt-8 pb-5 text-sm text-center sm:text-left ">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Incidunt minus, molestias
+                minima voluptates voluptas ad quae sunt consequuntur amet itaque</p>
+            <p class="uppercase text-sm	font-bold tracking-widest text-center sm:text-left"><a href="#">Contact Me</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ===================
+    bg end
+========================= -->
+
+    <!-- ===================
+    pllagin start
+========================= -->
+    <section class="container mx-auto px-4 mt-16 md:mt-32">
+        <div class="overflow-x-auto">
+            <ul class="uppercase flex justify-center flex-wrap gap-3 md:gap-7 text-sm md:text-base">
+                <li><a class="hover:bg-yellow-400 hover:text-white hover:p-2" href="#">all</a></li>
+                <li><a class="hover:bg-yellow-400 hover:text-white hover:p-2" href="#">Programming</a></li>
+                <li><a class="hover:bg-yellow-400 hover:text-white hover:p-2" href="#">illustration</a></li>
+                <li><a class="hover:bg-yellow-400 hover:text-white hover:p-2" href="#">WordPress</a></li>
+                <li><a class="hover:bg-yellow-400 hover:text-white hover:p-2" href="#">Photography</a></li>
+                <li><a class="hover:bg-yellow-400 hover:text-white hover:p-2" href="#">Development</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col md:flex-row gap-3 mt-9">
+            <div class="w-full md:w-4/12"><img class="w-full" src="image/1.jpg.png" alt=""></div>
+            <div class="w-full md:w-4/12"><img class="w-full" src="image/2.png" alt=""></div>
+            <div class="w-full md:w-4/12"><img class="w-full" src="image/3.png" alt=""></div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-3 mt-3">
+            <div class="w-full md:w-8/12"><img class="w-full" src="image/3.jpg.png" alt=""></div>
+            <div class="w-full md:w-4/12"><img class="w-full" src="image/4.jpg.png" alt=""></div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-3 mt-3">
+            <div class="w-full md:w-4/12"><img class="w-full" src="image/7.jpg.png" alt=""></div>
+            <div class="w-full md:w-4/12"><img class="w-full" src="image/8.jpg.png" alt=""></div>
+            <div class="w-full md:w-4/12"><img class="w-full" src="image/9.jpg.png" alt=""></div>
+        </div>
+        <div>
+            <p class="text-center mt-9 mb-32 font-bold text-sm"><a href="#">view more</a></p>
+        </div>
+    </section>
+
+    <!-- ===================
+    pllagin end
+========================= -->
+    <!-- ===================
+    latest start
+========================= -->
+
+    <section class="bg-slate-200 py-8 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center ">
+                <h2
+                    class="font-bold text-2xl relative  after:absolute after:left-2/4 after:-bottom-1/3 after:bg-slate-950 after:w-20 after:-translate-x-2/4 after:mt-4 after:h-1 mb-5">
+                    Latest Posts</h2>
+                <p class="text-sm italic sm:w-[700px] m-auto ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Sequi
+                    tempora veritatis nemo aut ea iusto eosest expedita, quas ab adipisci.</p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white">
+                    <img class="w-full" src="image/Link ⏵ 1.jpg.png" alt="">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-xl uppercase">Blog Post title</h3>
+                        <p class="text-slate-600 pt-1">Admin<span class="mx-3">-</span>20 Jan, 2070<span class="mx-3">-</span>Graphic</p>
+                        <p class="pt-2 text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae maiores, quidem cumque!</p>
+                        <p class="font-bold uppercase py-5">read more</p>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <img class="w-full" src="image/Link ⏵ 2.jpg.png" alt="">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-xl uppercase">Blog Post title</h3>
+                        <p class="text-slate-600 pt-1">Admin<span class="mx-3">-</span>20 Jan, 2070<span class="mx-3">-</span>Graphic</p>
+                        <p class="pt-2 text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae maiores, quidem cumque!</p>
+                        <p class="font-bold uppercase py-5">read more</p>
+                    </div>
+                </div>
+                <div class="bg-white">
+                    <img class="w-full" src="image/Link ⏵ 3.jpg.png" alt="">
+                    <div class="p-5">
+                        <h3 class="font-semibold text-xl uppercase">Blog Post title</h3>
+                        <p class="text-slate-600 pt-1">Admin<span class="mx-3">-</span>20 Jan, 2070<span class="mx-3">-</span>Graphic</p>
+                        <p class="pt-2 text-slate-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae maiores, quidem cumque!</p>
+                        <p class="font-bold uppercase py-5">read more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================
+    latest end
+========================= -->
+
+    <!-- ===================
+    contact start
+========================= -->
+    <section class="mt-16 md:mt-32 px-4">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <img class="mx-auto" src="image/logo.png" alt="">
+                <p class="max-w-2xl mx-auto py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="uppercase text-sm font-bold tracking-widest">Contact Me</p>
+            </div>
+        </div>
+    </section>
+    <!-- ===================
+    contact end
+========================= -->
+
+    <!-- ===================
+    footer start
+========================= -->
+    <footer class="mt-32 mb-16">
+        <div class="container m-auto">
+            <p class="m-auto text-center ">All © reserved by <span class="text-yellow-500">Faizul Gazi</span></p>
+        </div>
+    </footer>
+    <!-- ===================
+    footer end
+========================= -->
+
+</body>
+
+</html>
